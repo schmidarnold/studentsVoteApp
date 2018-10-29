@@ -1,0 +1,40 @@
+{
+  "name": "Votes",
+  "plural": "Y",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "vote": {
+      "type": "number",
+      "required": true
+    },
+    "criteria": {
+      "type": "string",
+      "required": true
+    },
+    "semester": {
+      "type": "number"
+
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "student": {
+      "type": "belongsTo",
+      "model": "Student",
+      "foreignKey": "studentId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
