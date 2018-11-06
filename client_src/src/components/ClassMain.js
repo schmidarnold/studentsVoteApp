@@ -16,6 +16,7 @@ class ClassMain extends Component {
       return(
         <div>
           <h1>Schülerübersicht der Klasse {className}</h1>
+
           <Card.Group>
             {studentsArray.map((student)=>
               ( //child component

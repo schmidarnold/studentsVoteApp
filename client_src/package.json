@@ -28,6 +28,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "dotenv": "^6.1.0",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0"
   }
